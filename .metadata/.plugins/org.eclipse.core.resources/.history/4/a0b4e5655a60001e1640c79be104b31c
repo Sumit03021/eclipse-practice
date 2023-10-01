@@ -1,0 +1,10 @@
+package Lecture_22;
+
+public class twoD_array_min {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
