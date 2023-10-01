@@ -19,8 +19,10 @@ public class twoD_array_min {
 			if(arr[i][j]<min) {
 				min=arr[i][j];
 			}
+			
 		}
 			System.out.println(min);
 	}
 	}
+
 }
