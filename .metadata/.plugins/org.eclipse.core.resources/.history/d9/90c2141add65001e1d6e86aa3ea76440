@@ -1,0 +1,30 @@
+package Lecture_24;
+
+public class palodromic {
+public static void palodromic(String str) {
+	int i=0;
+	int j=str.length()-1;
+ int count=0;
+ while(i<j) {
+	 if(str.charAt(i)==str.charAt(j)) {
+		 count++;
+		 i++;
+		 j--;
+	 }
+ }
+	 System.out.println(count);
+	 if(count == str.length()/2) {
+		 
+		 System.out.println("yes");
+	 }else {
+		 System.out.println("no");
+	 }
+ }
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+  String str="nitin";
+  palodromic(str);
+	}
+
+}

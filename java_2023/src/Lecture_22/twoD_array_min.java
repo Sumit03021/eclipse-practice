@@ -16,7 +16,7 @@ public class twoD_array_min {
 		for(int i=0;i<3;i++) {
 			int min=Integer.MAX_VALUE;
 			for(int j=0;j<4;j++) {
-			if(arr[i][j]<min) {
+			if(arr[i][j] < min) {
 				min=arr[i][j];
 			}
 		}

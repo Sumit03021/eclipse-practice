@@ -1,0 +1,38 @@
+package Lecture_24;
+
+public class string {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String str=new String("hello"); // new keywords--- store in heap memory.
+String str2="hello"; // string literals----- store in string pool
+// constant area (special area/memory of heap)
+System.out.println(str); // override to value of string-- new definition
+System.out.println(str2); // override to value of string ---new definition
+	if(str == str2) {
+		System.out.println("same");
+	}else {
+		System.out.println("not same"); // address comparison.....
+	}
+	String str3="bye";
+	String str4="bye";
+	if(str3 == str4) { // address in the same pool.
+		System.out.println("same");
+	}else {
+		System.out.println("not same"); // address comparison.....
+	}
+	String str5=new String("bye");
+	String str6=new String("bye");
+	if(str5 == str6) { // different address
+		System.out.println("same");
+	}else {
+		System.out.println("not same"); // address comparison.....
+	}
+	if(str2 == str4) {
+		System.out.println("same");
+	}else {
+		System.out.println("not same"); // address comparison.....
+	}
+	}
+
+}
