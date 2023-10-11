@@ -1,7 +1,7 @@
 package Lec14;
-
-class Solution {
-    public int trap(int[] height) {
+import java.util.*;
+public class Trapping_Rain_water {
+    public static int trap(int[] height) {
     
     int n= height.length;
         
@@ -29,9 +29,16 @@ class Solution {
         int currwater= Math.min(left[i], right[i])-height[i];
          sum+=currwater;
      }
-    return sum;
-        
+    return sum;   
     }
-    
+    public static void main(String []args) {
+   Scanner s=new Scanner(System.in)	;
+   int n=s.nextInt();
+   int []arr=new int[n];
+   for(int i=0;i<arr.length;i++) {
+	   arr[i]=s.nextInt();
+   }
+   System.out.println(trap(arr));
+    }
     
 }
