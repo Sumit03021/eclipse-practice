@@ -10,17 +10,29 @@ int []arr=new int[n];
 for(int i=0;i<n;i++) {
 	arr[i]=s.nextInt();
 }
+int []newarr=new int[n];
+for(int i=0;i<n;i++) {
+	newarr[i]=arr[i];
+}
+int circularsum=0;
   int m=s.nextInt();
   for(int i=0;i<m;i++) {
-	 int q=s.nextInt();
-	 int []newarr=new int[n];
+	 int q=s.nextInt(); 
+	 if(q>=1) {
 	for(int j=0;j<n;j++) {
-		for(int k=q;k>=0;k--) {
-		 newarr[j]+=arr[(n+j-k+1)%n];
-		 System.out.print(newarr[j]+" ");
+		 newarr[j]=newarr[j]+arr[(n+j-q)%n];
 	}
-		System.out.println();
+	 }else {
+		 for(int j=0;j<n;j++) {
+			 newarr[j]=2*newarr[j];
+		 }
+	 }
+	}
+  for(int i=0;i<n;i++) {
+	  circularsum=circularsum+newarr[i];
+  }
+  int sum=circularsum%((int)Math.pow(10,9)+7);
+  System.out.println(sum);
 	}
 }
-	}
-}
+
