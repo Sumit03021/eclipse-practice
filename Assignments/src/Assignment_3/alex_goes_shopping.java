@@ -1,23 +1,19 @@
 package Assignment_3;
 import java.util.*;
 public class alex_goes_shopping {
-public static void shopping(int []arr) {
-	Scanner s=new Scanner(System.in);
+public static void shopping(int []arr,int money,int k) {
 	int count=0;
-	int []choice=new int[2];
-	for(int i=0;i<2;i++) {
-		choice[i]=s.nextInt();
-	}
 	for(int i=0;i<arr.length;i++) {
-	if(choice[0]>=arr[i]) {
-		count++;
-	}
-} 
-	int money=0;
-	for(int i=0;i<arr.length;i++) {
-		money+=arr[i];
-	}
+			if(money%arr[i]==0) {
+				count++;
+			}
+		}
 	
+	if(count>=k) {
+		System.out.println("YES");
+	}else {
+		System.out.println("NO");
+} 
 }
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -29,7 +25,9 @@ for(int i=0;i<arr.length;i++) {
 }
 int q=s.nextInt();
  for(int i=0;i<q;i++) {
-	 shopping(arr);
+	 int money=s.nextInt();
+	 int k=s.nextInt();
+	 shopping(arr,money,k);
  }
 	}
 

@@ -8,7 +8,7 @@ int weight=s.nextInt();
 int count=0;
 for( int i=1;i<=weight;i++) {
 	int j=weight-i;
-		if(i+j==weight && i%2==0 && j%2==0 ) {
+		if(i+j==weight && i%2==0 && j%2==0 && weight>2) {
 			 count++ ;
 		  }
 }

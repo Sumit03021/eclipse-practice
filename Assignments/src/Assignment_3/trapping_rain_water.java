@@ -1,7 +1,7 @@
 package Assignment_3;
 import java.util.*;
 public class trapping_rain_water {
-public static int trap(int[] height) {
+public static void trap(int[] height) {
 	   int n= height.length;
 	   int left[]=new int [n];
 	   int right[]=new int[n];
@@ -18,18 +18,18 @@ public static int trap(int[] height) {
 		int currwater= Math.min(left[i], right[i])-height[i];
 	    sum+=currwater;
 	    }
-	     return sum;   
+	     System.out.println(sum);   
 	  }
 public static void main(String []args) {
 	Scanner s=new Scanner(System.in)	;
 	int t=s.nextInt();
-    int n=s.nextInt();
-	int []arr=new int[n];
 	for(int j=1;j<=t;j++) {
+		int n=s.nextInt();
+		int []arr=new int[n];
 		for(int i=0;i<arr.length;i++) {
 			arr[i]=s.nextInt();
 		}
-	System.out.println(trap(arr));	
+	trap(arr);	
 	}
 	
 	}

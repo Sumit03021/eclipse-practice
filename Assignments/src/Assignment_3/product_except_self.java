@@ -3,10 +3,10 @@ package Assignment_3;
 import java.util.Scanner;
 
 public class product_except_self {
-public static void product(int []arr) {
-	int []prefix=new int[arr.length];
-	int []suffix=new int[arr.length];
-	int []product= new int[arr.length];
+public static void product(long []arr) {
+	long []prefix=new long[arr.length];
+	long []suffix=new long[arr.length];
+	long []product= new long[arr.length];
 	prefix[0]=1;
 	suffix[arr.length-1]=1;
 	
@@ -28,9 +28,9 @@ public static void product(int []arr) {
 		// TODO Auto-generated method stub
 Scanner s=new Scanner(System.in);
 int n=s.nextInt();
-int []arr=new int[n];
+long []arr=new long[n];
 for(int i=0;i<arr.length;i++) {
-	arr[i]=s.nextInt();
+	arr[i]=s.nextLong();
 }
 product(arr);
 	}
