@@ -1,11 +1,11 @@
 package Assignment_3;
 import java.util.*;
 public class pair_roses {
-	public static int min(int []arr) {
+	public static int min(int []arr,int target) {
 		int min=Integer.MAX_VALUE;
 		for(int i=0;i<arr.length;i++) {
 			for( int j=i;j<arr.length;j++) {
-				if(min>arr[j]-arr[i] && j!=i) {
+				if(min>arr[j]-arr[i] && j!=i && arr[i]+arr[j]==target) {
 					min=arr[j]-arr[i];
 				}
 			}
@@ -13,11 +13,12 @@ public class pair_roses {
 		return min;
 	}
 public static void pairroses(int []arr,int target) {
-	int min=min(arr);
+	int min=min(arr,target);
 for(int i=0;i<arr.length;i++) {
 for( int j=i;j<arr.length;j++) {
 if(arr[i]+arr[j]==target && arr[j]-arr[i]==min &&j!=i) {
 System.out.println("Deepak should buy roses whose prices are "+arr[i]+" and "+arr[j]+".");
+return;
 			}
 		}
 	}

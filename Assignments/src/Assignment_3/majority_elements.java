@@ -37,11 +37,8 @@ public static int [] majority(int []arr) {
 	for(int i=0;i<count;i++) {
 		elements[i]=newarr[i];
 	}
-	
-	
 	return elements;
 	}
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 Scanner s=new Scanner(System.in);

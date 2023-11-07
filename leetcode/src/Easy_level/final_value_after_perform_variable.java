@@ -5,10 +5,10 @@ public static int afteroperations(String[]operations) {
 	int x=0;
 	int n=operations.length;
 	for(int i=0;i<n;i++) {
-		if(operations[i]=="X++"||operations[i]=="++X") {
+		if(operations[i]==174) {
 			x=x+1;
 			System.out.println(x);
-		}else if(operations[i]=="--X"||operations[i]=="X--") {
+		}else if(operations[i]==178) {
 			x=x-1;
 			System.out.println(x);
 		}
