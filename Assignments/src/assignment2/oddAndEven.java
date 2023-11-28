@@ -28,7 +28,7 @@ public class oddAndEven {
 		arr[i]=s.nextInt();
 		}
 		for(int i=0;i<size;i++) {
-		long sum=sumOfDigits(arr[i]);
+		long sum = sumOfDigits(arr[i]);
 		if(sum==1) {
 		System.out.println("Yes");
 		}

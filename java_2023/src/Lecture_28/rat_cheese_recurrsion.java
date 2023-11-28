@@ -4,7 +4,7 @@ public class rat_cheese_recurrsion {
 public static void rat(int currrow,int currcol,int dr,int dc,String ans) {
 	if(currrow==dr &&currcol==dc) {
 		System.out.println(ans);
-		return;
+		return ;
 	}
 	if(currrow >dr || currcol >dc) {
 		return;
@@ -18,6 +18,7 @@ Scanner s=new Scanner(System.in);
 int row=s.nextInt();
 int col=s.nextInt();
 rat(0,0,row,col,"");
+
 	}
 
 }
