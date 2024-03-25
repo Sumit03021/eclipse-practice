@@ -18,19 +18,19 @@ public class MIN_find {
 		// TODO Auto-generated method stub
          int [] arr= {14,10,-6,-20};
          
-          int low=-1000;
-          int high=Integer.MAX_VALUE;
+          int low = -1000;
+          int high = Integer.MAX_VALUE;
           
-          int ans=-1;
+          int ans = -1;
           while(low<=high) {
         	  
-        	  int mid= (low+high)/2;
+        	  int mid = (low+high)/2;
         	  
         	  if(Can_min(arr, mid)==false) {
-        		  high=mid-1;
+        		  high = mid-1;
         	  }else {
-        		  ans=mid;
-        		  low=mid+1;
+        		  ans = mid;
+        		  low = mid+1;
         	  }
           }
           

@@ -27,9 +27,9 @@ public class reverse_the_arra {
 	   
 	   while(i<=j) {
 		   
-		   int temp= arr[i];
-		   arr[i]=arr[j];
-		   arr[j]=temp;
+		   int temp = arr[i];
+		   arr[i] = arr[j];
+		   arr[j] = temp;
 		   i++;
 		   j--;
 	   }

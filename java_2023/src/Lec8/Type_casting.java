@@ -7,7 +7,7 @@ public class Type_casting {
        
 //		int a=34;
 //		
-//		double d= a;
+//		double d =  a;
 //		
 //		System.out.println(d);
 		
@@ -16,14 +16,14 @@ public class Type_casting {
 //		int a=-5;
 //		
 //		byte b= (byte)a;
-		
+//		System.out.println(b);
 		
 		// Implicite
 		
 		byte b=-30;
 		
 		int a=b;
-		
+		System.out.println(b);
 		
 		
 		

@@ -17,7 +17,7 @@ public class MIN_in_each_rows {
     	  
     	  for(int j=0; j<arr[i].length;j++) {
     		  
-    		  min_val= Math.min(min_val,arr[i][j]);
+    		  min_val = Math.min(min_val,arr[i][j]);
     		  
     	  }
     	  

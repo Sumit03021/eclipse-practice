@@ -33,7 +33,7 @@ public class Subarray_cut {
 			
 			for(int e=s;e<arr.length; e++) {
 				
-				  sum= sum+ arr[e];
+				  sum= sum + arr[e];
 				 maxsum= Math.max(maxsum, sum);
 			}
 		}
